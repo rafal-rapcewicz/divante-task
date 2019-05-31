@@ -15,6 +15,7 @@ import { BookService } from './services/book-service.service';
 import { ItemCardComponent } from './item-card/item-card.component';
 import { appReducer, metaReducers } from './store/reducers/app.reducer';
 import { StoreEffects } from './store/effects/store.effects';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { StoreEffects } from './store/effects/store.effects';
     TopMenuComponent,
     SideNavigationComponent,
     ShopItemsComponent,
-    ItemCardComponent
+    ItemCardComponent,
+    WelcomeComponent
   ],
   imports: [
     StoreModule.forRoot(appReducer, { metaReducers }),

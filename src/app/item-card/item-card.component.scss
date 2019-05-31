@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables';
+
 .card {
   display: grid;
   grid-template-columns: 128px 1fr;
@@ -19,6 +21,7 @@ img {
 
 span {
     &.label {
-        font-weight: 500;
+        font-size: 14px;
+        color: $light-text;
     }
 }
