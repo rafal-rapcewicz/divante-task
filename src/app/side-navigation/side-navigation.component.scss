@@ -1,0 +1,6 @@
+.cart-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Where the magic happens */
+    grid-auto-rows: auto;
+    grid-gap: 5px;
+  }

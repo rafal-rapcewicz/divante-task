@@ -1,0 +1,24 @@
+.card {
+  display: grid;
+  grid-template-columns: 128px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "image label1"
+    "image data1"
+    "image label2"
+    "image data2"
+    "image label3"
+    "image data3"
+    "image action";
+  grid-gap: 5px;
+}
+
+img {
+  grid-area: image;
+}
+
+span {
+    &.label {
+        font-weight: 500;
+    }
+}
