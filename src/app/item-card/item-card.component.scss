@@ -10,13 +10,15 @@
     "image label2"
     "image data2"
     "image label3"
-    "image data3"
-    "image action";
+    "image data3";
   grid-gap: 5px;
 }
 
-img {
+.thumbnail-action {
   grid-area: image;
+  button {
+      margin-top: 5px;
+  }
 }
 
 span {

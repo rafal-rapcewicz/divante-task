@@ -26,8 +26,8 @@ export class StoreEffects {
             )
           )
         ),
-        toArray()
-      )
+        toArray(),
+      ),
     ),
     map(books => new storeActions.GetBooksSucceededAction(books)),
     catchError(error => of(new storeActions.GetBooksFailedAction(error)))

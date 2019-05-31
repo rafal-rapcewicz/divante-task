@@ -1,10 +1,12 @@
 <div class="card">
-  <img [src]="item.volumeInfo.imageLinks.smallThumbnail">
+  <div class="thumbnail-action">
+      <img [src]="item.volumeInfo.imageLinks.smallThumbnail">
+      <button (click)="addToCart(item)" mat-button mat-raised-button>Add</button>
+  </div>
   <span class="label">Title</span>
   <span>{{ item.volumeInfo.title }}</span>
   <span class="label">Authors</span>
   <span>{{ item.volumeInfo.authors || '-' }}</span>
   <span class="label">Description</span>
   <span>{{ item.volumeInfo.description }}</span>
-  <button (click)="addToCart(item)" mat-button mat-flat-button>Add</button>
 </div>
